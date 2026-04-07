@@ -1,58 +1,45 @@
+# 🚀 Agentic AI Supply Chain System (AWS + Generative AI)
 
-# Welcome to your CDK Python project!
+## 📌 Overview
+Production-grade multi-agent AI system for supply chain optimization using AWS.
 
-This is a blank project for CDK development with Python.
+---
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## 🧠 Architecture
 
-This project is set up like a standard Python project.  The initialization
-process also creates a virtualenv within this project, stored under the `.venv`
-directory.  To create the virtualenv it assumes that there is a `python3`
-(or `python` for Windows) executable in your path with access to the `venv`
-package. If for any reason the automatic creation of the virtualenv fails,
-you can create the virtualenv manually.
+S3 → Step Functions → Planner → Approval → Executor → Analyst → DynamoDB → Dashboard
 
-To manually create a virtualenv on MacOS and Linux:
+---
 
-```
-$ python3 -m venv .venv
-```
+## 🤖 Agents
 
-After the init process completes and the virtualenv is created, you can use the following
-step to activate your virtualenv.
+- Planner → AI decision making (Bedrock)
+- Executor → performs actions
+- Analyst → detects risks & alerts
 
-```
-$ source .venv/bin/activate
-```
+---
 
-If you are a Windows platform, you would activate the virtualenv like this:
+## 👤 Human-in-the-loop
 
-```
-% .venv\Scripts\activate.bat
-```
+Approval system using Step Functions + API Gateway
 
-Once the virtualenv is activated, you can install the required dependencies.
+---
 
-```
-$ pip install -r requirements.txt
-```
+## ⚙️ Tech Stack
 
-At this point you can now synthesize the CloudFormation template for this code.
+AWS Lambda | Step Functions | DynamoDB | SNS | API Gateway | S3 | Bedrock | Streamlit
 
-```
-$ cdk synth
-```
+---
 
-To add additional dependencies, for example other CDK libraries, just add
-them to your `requirements.txt` file and rerun the `python -m pip install -r requirements.txt`
-command.
+## 🚀 Features
 
-## Useful commands
+- Multi-agent AI system  
+- Natural language query  
+- AI reasoning storage  
+- Serverless architecture  
 
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
+---
 
-Enjoy!
+## 👨‍💻 Author
+
+Abhishek Dhumal
